@@ -9,9 +9,13 @@
       content="Welcome to the most extraordinary hotel in Boston Massachusetts"
     />
     <meta name="keyword" content="hotel,boston hotel,new england hotel" />
+    <script
+      src="https://kit.fontawesome.com/365af7595b.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="css/style.css" />
-    <title>Hotel BT | About</title>
+    <title>Hotel BT | Contact</title>
   </head>
   <body>
     <header>
@@ -27,57 +31,47 @@
       </nav>
     </header>
 
-    <section id="about-info" class="bg-light py-3">
+    <section id="contact-form" class="py-3">
       <div class="container">
-        <div class="info-left">
-          <h1 class="l-heading">
-            <span class="text-primary">About</span> Hotel BT
-          </h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            maiores rerum omnis, sequi ex sed quia dignissimos natus vero. Vero
-            laborum distinctio iste quibusdam dicta totam fuga aliquam
-            architecto expedita.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus iure
-            necessitatibus quae voluptas odio dolore eos nobis asperiores ipsam
-            placeat?
-          </p>
-        </div>
-        <div class="info-right">
-          <img src="./img/photo-2.jpg" alt="hotel" />
-        </div>
+        <h1 class="l-heading"><span class="text-primary">Contact </span>Us</h1>
+        <p>Please fill out the form below to contact us</p>
+        <form action="process.php">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
       </div>
     </section>
 
-    <div class="clr"></div>
-
-    <section id="testimonials" class="py-3">
+    <section id="contact-info" class="bg-dark">
       <div class="container">
-        <h2 class="l-heading">What Our Guests Say</h2>
-        <div class="testimonial bg-primary">
-          <img src="./img/person-1.jpg" alt="Samantha" />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel neque
-            doloremque molestiae commodi est laborum sunt, facere veniam ducimus
-            quae enim, quisquam dolorum beatae excepturi libero a inventore
-            corrupti consectetur expedita sed nesciunt magnam! Eligendi beatae
-            voluptates excepturi at sed.
+        <div class="box">
+          <i class="fa-solid fa-duotone fa-hotel fa-3x"></i>
+          <h3>Location</h3>
+          <p>50 Main st, Boston MA</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-duotone fa-phone fa-3x"></i>
+          <h3>Phone Number</h3>
+          <p>(647) 555-5555</p>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-duotone fa-envelope fa-3x"></i>
+          <h3>Email Adress</h3>
+          <p>frontdesk@hotelbt.co
           </p>
         </div>
-
-        <div class="testimonial bg-primary">
-          <img src="./img/person-2.jpg" alt="Jen" />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel neque
-            doloremque molestiae commodi est laborum sunt, facere veniam ducimus
-            quae enim, quisquam dolorum beatae excepturi libero a inventore
-            corrupti consectetur expedita sed nesciunt magnam! Eligendi beatae
-            voluptates excepturi at sed.
-          </p>
-        </div>
-
       </div>
     </section>
 
